@@ -1,0 +1,11 @@
+﻿.container, .body-content {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.w3-sidebar {
+    position: relative !important;
+}
+#answer {
+    overflow-y: scroll;
+    height: 400px;
+}
