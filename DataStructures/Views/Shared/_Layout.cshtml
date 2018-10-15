@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand-first" })
+                <span id="first-item">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</span>
                 @Html.ActionLink("Stack", "Stack", "Stack", new { area = "" }, new { @class = "navbar-brand" })
                 @Html.ActionLink("Queue", "Queue", "Queue", new { area = "" }, new { @class = "navbar-brand" })
                 @Html.ActionLink("Dictionary", "Dictionary", "Dictionary", new { area = "" }, new { @class = "navbar-brand" })
@@ -33,7 +33,6 @@
     <div class="container body-content">
         @RenderBody()
     </div>
-
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>

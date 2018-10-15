@@ -21,7 +21,7 @@
         <a href="@Url.Action("Search" , "Stack")" class="w3-bar-item w3-button">Search Stack</a>
         <a href="@Url.Action("Index" , "Home")" class="w3-bar-item w3-button">Return to main menu</a>
     </div>
-    <div class="col-sm-2" id="answer">
+    <div class="col-sm-3" id="answer">
             @Html.Raw((String)ViewBag.Output)
             @Html.Raw((String)ViewBag.Search)
     </div>
