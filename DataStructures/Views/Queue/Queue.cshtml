@@ -5,28 +5,24 @@
 
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="../../Content/Custom.css">
 </head>
 
-<h2>Queue</h2>
+<h2 id="header">Queue</h2>
 <!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-    <h3 class="w3-bar-item">Menu</h3>
-    <a href="@Url.Action("AddOne" , "Queue")" class="w3-bar-item w3-button">Add one time to Queue</a>
-    <a href="@Url.Action("AddBunch" , "Queue")" class="w3-bar-item w3-button">Add huge list of items to Queue</a>
-    <a href="@Url.Action("Display" , "Queue")" class="w3-bar-item w3-button">Display Queue</a>
-    <a href="@Url.Action("Delete" , "Queue")" class="w3-bar-item w3-button">Delete from Queue</a>
-    <a href="@Url.Action("Clear", "Queue")" class="w3-bar-item w3-button">Clear Queue</a>
-    <a href="@Url.Action("Search" , "Queue")" class="w3-bar-item w3-button">Search Queue</a>
-    <a href="@Url.Action("Index" , "Home")" class="w3-bar-item w3-button">Return to main menu</a>
-</div>
-<style>
-    #answer {
-        text-align: center;
-        margin: 0 auto;
-    }
-</style>
-<div id="answer">
-
-    @Html.Raw((String)ViewBag.Output)
-    @Html.Raw((String)ViewBag.Search)
+<div class="row">
+    <div class="col-sm-6 w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="@Url.Action("AddOne" , "Queue")" class="w3-bar-item w3-button">Add one time to Queue</a>
+        <a href="@Url.Action("AddBunch" , "Queue")" class="w3-bar-item w3-button">Add huge list of items to Queue</a>
+        <a href="@Url.Action("Display" , "Queue")" class="w3-bar-item w3-button">Display Queue</a>
+        <a href="@Url.Action("Delete" , "Queue")" class="w3-bar-item w3-button">Delete from Queue</a>
+        <a href="@Url.Action("Clear", "Queue")" class="w3-bar-item w3-button">Clear Queue</a>
+        <a href="@Url.Action("Search" , "Queue")" class="w3-bar-item w3-button">Search Queue</a>
+        <a href="@Url.Action("Index" , "Home")" class="w3-bar-item w3-button">Return to main menu</a>
+    </div>
+    <div class="col-sm-2" id="answer">
+        @Html.Raw((String)ViewBag.Output)
+        @Html.Raw((String)ViewBag.Search)
+    </div>
 </div>
