@@ -68,3 +68,7 @@ a:hover {
     margin: 100px;
     text-align:center;
 }
+.container, .body-content{
+    margin-right: 0px !important;
+    padding-right: 0px;
+}
