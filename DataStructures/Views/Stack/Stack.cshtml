@@ -1,4 +1,6 @@
-﻿
+﻿<!--
+        Authors: Alec Ostheimer, Ben Walbrecht, Cash Allred, Zach McQuiston
+-->
 @{
     ViewBag.Title = "Stack";
 }
@@ -22,7 +24,7 @@
         <a href="@Url.Action("Index" , "Home")" class="w3-bar-item w3-button">Return to main menu</a>
     </div>
     <div class="col-sm-3" id="answer">
-            @Html.Raw((String)ViewBag.Output)
-            @Html.Raw((String)ViewBag.Search)
+        @Html.Raw((String)ViewBag.Output)
+        @Html.Raw((String)ViewBag.Search)
     </div>
 </div>

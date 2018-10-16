@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+    Authors: Alec Ostheimer, Ben Walbrecht, Cash Allred, Zach McQuiston
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
